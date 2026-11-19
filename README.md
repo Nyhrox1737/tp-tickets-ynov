@@ -1,5 +1,7 @@
 # Suivi des tickets informatiques
 
+Groupe : Shakil Khaldi / Dimitri Manfredonia / Nohan Reis
+
 Un collaborateur décrit un incident. Le groupe peut ensuite passer le ticket de **Ouvert** à **En cours**, puis à **Résolu**.
 
 ## Lancer sur son PC
