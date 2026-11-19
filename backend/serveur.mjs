@@ -38,7 +38,7 @@ createServer(async (req, res) => {
       res.writeHead(200, { 'Content-Type': type + '; charset=utf-8' });
       return res.end(contenu);
     }
-    if (req.method === 'GET' && chemin === '/health') return json(200, { status: 'ok' });
+    if (req.method === 'GET' && chemin === '/health') return json(200, { status: 'ok', application: 'Suivi des tickets Ynov' });
     if (chemin === '/api/tickets' && req.method === 'GET') return json(200, await lister());
     if (chemin === '/api/tickets' && req.method === 'POST') {
       const data = await lireJSON(req);
