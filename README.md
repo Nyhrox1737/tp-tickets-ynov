@@ -52,3 +52,11 @@ Pendant la mise en place, Render a demandé la validation du compte par e-mail. 
 ## Vérifications du 19 novembre
 
 Le dépôt privé est sur https://github.com/Nyhrox1737/tp-tickets-ynov. L’API publique est accessible sur https://tp-tickets-ynov.onrender.com/api/tickets. Elle a retourné une liste vide après la création de la table sur Supabase. En local, un ticket passé à Résolu a gardé son statut après ouverture de la base par un deuxième processus Node. La route /health affiche le nom de l’application pour repérer le second déploiement Render.
+
+## Liens pour la restitution
+
+- [Application publique](https://tp-tickets-ynov.vercel.app)
+- [API des tickets](https://tp-tickets-ynov.onrender.com/api/tickets)
+- [État de l’API](https://tp-tickets-ynov.onrender.com/health)
+
+Depuis le site public, le ticket n° 1 « Imprimante en salle 213 » a été créé avec le statut Ouvert. Les passages à En cours puis à Résolu ont chacun été vérifiés après actualisation. Le frontend a été publié par envoi direct des fichiers générés sur Vercel. Le redéploiement automatique a été démontré côté Render après le commit modifiant /health. La route publique affiche bien « Suivi des tickets Ynov ».
