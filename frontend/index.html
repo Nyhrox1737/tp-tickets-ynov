@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suivi des tickets</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main>
+    <header><h1>Suivi des tickets</h1></header>
+    <section>
+      <h2>Nouveau ticket</h2>
+      <form id="formulaire">
+        <label for="titre">Titre</label>
+        <input id="titre" name="titre" maxlength="120" required placeholder="Ex. Imprimante en salle 213">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="3" maxlength="2000" required></textarea>
+        <button>Créer le ticket</button>
+      </form>
+    </section>
+    <section>
+      <h2>Tickets déclarés</h2>
+      <p id="message" role="status"></p>
+      <div id="tickets"></div>
+    </section>
+  </main>
+</body>
+</html>
