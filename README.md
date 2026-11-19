@@ -42,17 +42,6 @@ Vercel distribue les fichiers statiques. Render exécute le code qui valide le f
 
 Pendant la mise en place, Render a demandé la validation du compte par e-mail. Le tableau de bord a été rouvert après cette étape pour reprendre la connexion.
 
-## Démonstration orale (3 à 5 minutes)
-
-- **0:00 à 1:00** — Montrer le schéma. Suivre le trajet du bouton « Créer le ticket » jusqu’à PostgreSQL.
-- **1:00 à 2:00** — Ouvrir le site, déclarer « Imprimante en salle 213 » et décrire le problème. Montrer le numéro obtenu et le statut Ouvert.
-- **2:00 à 3:00** — Passer le ticket à En cours puis à Résolu. Actualiser et retrouver son numéro. Comparer avec la réponse JSON de GET /api/tickets.
-- **3:00 à 4:00** — Montrer le dernier déploiement et son commit. Chaque membre explique une opération qu’il a réellement effectuée.
-
-## Vérifications du 19 novembre
-
-Le dépôt privé est sur https://github.com/Nyhrox1737/tp-tickets-ynov. L’API publique est accessible sur https://tp-tickets-ynov.onrender.com/api/tickets. Elle a retourné une liste vide après la création de la table sur Supabase. En local, un ticket passé à Résolu a gardé son statut après ouverture de la base par un deuxième processus Node. La route /health affiche le nom de l’application pour repérer le second déploiement Render.
-
 ## Liens pour la restitution
 
 - [Application publique](https://tp-tickets-ynov.vercel.app)
